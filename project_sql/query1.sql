@@ -1,1 +1,1 @@
--- delete this later
+select * from people;
