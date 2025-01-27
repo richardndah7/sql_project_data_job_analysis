@@ -59,13 +59,5 @@ Tableau and Looker, with demand counts of 230 and 49 respectively, and average s
 highlight the critical role of data visualization in Data Analysis.
 
 
-Thank you for your time 
-
-Appreciations:
-
-Luke Barousse https://www.linkedin.com/in/luke-b/
-Kelly Adams   https://www.kellyjadams.com/
-
-For putting together a wonderful sql learning course on youtube to help improve proficiency for so many people out there.
-Most Luke also for putting together the dataset that was used for this analysis in this project.
+Thank you for reading!
 */
