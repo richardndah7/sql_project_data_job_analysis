@@ -56,6 +56,9 @@ Analysis of the top ten highest-paying Data Analyst roles revealed a significant
 Furthermore, all ten of these top-paying roles were full-time and remote positions.
 
 Finally, the analysis demonstrated a diversity of Data Analyst roles within the top ten, including positions such as Director of Analytics and Principal Data Analyst, indicating a wide range of career paths and specializations available within the field.
+ 
+![Top Paying jobs](<viz_images/Sheet 1.png>)
+Bar graph visualizing the salary for the top 10 salaries for data analysts; i created this simple graph from my SQL query results using Tableau
 
 ### 2. Skills for Top Paying Jobs
 ```sql
@@ -127,10 +130,13 @@ ORDER BY avg_salary  DESC
 ) 
 GROUP BY skills 
 ORDER BY skills_count DESC
-LIMIT 5
+LIMIT 10
 ```
 **My Findings :**
 The analysis of job postings reveals the top 5 most sought-after skills for data analysts in 2023: SQL (with 8 occurrences), Python (7 occurrences), Tableau (6 occurrences), R (4 occurrences), and Pandas (3 occurrences).
+
+![Required Skills](<viz_images/Sheet 2.png>)
+Bar graph visualizing the top 10 skills required for the top pyaing jobs for data analysts; i created this simple graph from my SQL query results using Tableau
 
 ### 3. In-Demand Skills for Data Analysts
 ```sql
@@ -145,10 +151,12 @@ WHERE
     job_location = 'Anywhere'
 GROUP BY skills
 ORDER BY demanded_skills DESC
-LIMIT 5
+LIMIT 10
 ```
 **My Findings :**
 The analysis demonstrates that a strong foundation in SQL and Excel is essential for success in the Data Analyst field. Python emerges as the dominant programming language, indicating its crucial role in data manipulation and analysis. Tableau establishes itself as the leading data visualization tool, with Power BI also demonstrating significant demand.
+![Demanded Skills](<viz_images/Sheet 3.png>)
+Bar graph visualizing the top 10 demanded skills for data analysts; i created this simple graph from my SQL query results using Tableau
 
 ### 4. Skills Based on Salary
 ```sql
@@ -172,7 +180,19 @@ LIMIT 10
 The  query above, regardless of location, identified Oracle, Kafka, Linux, Git, and SVN as exceptionally high-paying skills for Data Analysts, with an average annual salary exceeding $400,000.
 
 However, this project's focus shifted to remote work opportunities, revealing a distinct set of top-earning skills. This analysis identified SQL, Python, R, Azure, Databricks, AWS, Pandas, PySpark, Jupyter, and Excel as the top ten most financially rewarding skills for Data Analysts in remote roles.
-
+| Skill name    |  Job related           | Average Salary ($)
+|---------------|------------------------|--------------------
+| Oracle        | Database Administrator | 400.000.00
+| Kafka         | Database Administrator | 400.000.00
+| Linux         | Database Administrator | 400.000.00
+| Git           | Database Administrator | 400.000.00
+| SVN           | Database Administrator | 400.000.00
+| Python        | HC Data Analyst,Senior | 375.000.00
+| R             | HC Data Analyst,Senior | 375.000.00
+| VBA           | HC Data Analyst,Senior | 375.000.00
+| Excel         | HC Data Analyst,Senior | 375.000.00
+| Tableau       | HC Data Analyst,Senior | 375.000.00
+*Table of the average salary for the top 10 paying skills for data analysts*
 ### 5. Most Optimal Skills to Learn
 ```sql
 WITH skills_demand AS (
@@ -226,6 +246,20 @@ Programming languages like Python and R continue to dominate, with demand counts
 Data Visualization: A Critical Component
 
 Tableau and Looker, with demand counts of 230 and 49 and average salaries around $99,288 and $103,795, respectively, highlight the critical importance of data visualization skills for Data Analysts.
+| Skill ID | Skills     | Demand Count | Average Salary ($) |
+|----------|------------|--------------|-------------------:|
+| 8        | go         | 27           |            115,320 |
+| 234      | confluence | 11           |            114,210 |
+| 97       | hadoop     | 22           |            113,193 |
+| 80       | snowflake  | 37           |            112,948 |
+| 74       | azure      | 34           |            111,225 |
+| 77       | bigquery   | 13           |            109,654 |
+| 76       | aws        | 32           |            108,317 |
+| 4        | java       | 17           |            106,906 |
+| 194      | ssis       | 12           |            106,683 |
+| 233      | jira       | 20           |            104,918 |
+
+*Table of the most optimal skills for data analyst sorted by salary*
 # Key Takeaways
 This journey has significantly expanded my SQL expertise. I've mastered complex query crafting, including intricate joins and efficient use of WITH clauses. I've become proficient in data aggregation techniques, leveraging functions like COUNT() and AVG() to summarize data effectively. Moreover, I've honed my analytical skills, translating real-world questions into actionable SQL queries.
 # Conclusion
