@@ -6,7 +6,7 @@ For the SQL queries please check them out on the following link  [CLick here](/p
 # Background
 Driven by a desire to understand the evolving data analyst landscape, this project leverages data gathered during my SQL Course to pinpoint top-paying roles and in-demand skills. The insights gleaned from this analysis can help aspiring data analysts navigate the job market more effectively.
 
-### he questions I wanted to answer through my SQL queries were:
+### The questions I wanted to answer through my SQL queries were:
 1. What are the top-paying data analyst jobs?
 2. What skills are required for these top-paying jobs?
 3. What skills are most in demand for data analysts?
